@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Element By Class Name</title>
+</head>
+<body>
+  <div id="demo">Hello World</div>
+  <!-- <div class="demo">Haii</div>
+  <div class="demo1">This is another heading</div> -->
+  <script>
+    /* const element=document.getElementsByClassName("demo");
+    for(i=0;i<element.length;i++){
+      element[i].innerHTML="This is new heading"
+    } */
+
+    const element=document.getElementById("demo");
+    console.log(element);
+    element.style.color="red";
+
+  </script>
+</body>
+</html>

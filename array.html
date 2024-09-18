@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array</title>
+</head>
+<body>
+  
+
+
+  <script>
+    let fruits = ['Apple','Orange','Grapes']
+    console.log(fruits)
+    console.log(fruits.length)
+
+    //Accessing array elements
+    console.log(fruits[1])
+    fruits[1]='banana';
+    console.log(fruits); 
+
+    //push
+    fruits.push('coconut');
+    fruits.push(1);
+    fruits.push(true);
+    fruits.push(2);
+    console.log(fruits);
+
+    //pop
+    //fruits.pop()
+    //console.log(fruits);
+
+    //unshift -- adds an element to the beginning
+    //fruits.unshift(10)
+    //console.log(fruits);
+
+    //shift -- deletes an element from the beginning
+    fruits.shift()
+    console.log(fruits)
+
+    //concat
+    //let a = [1,2,3,4,5]
+    //let b = [6,7,8,9,10]
+    //console.log(a.concat(b));
+
+
+    //slicing
+    //let fruit = ['Apple','Orange','Grapes','banana','coconut']
+    //console.log(fruit)
+    //let newarray = fruit.slice(0,3)
+    //console.log(newarray)
+
+
+    //splice
+    //let fruit = ['Apple','Orange','Grapes','banana','coconut']
+    //console.log(fruit)
+    //fruit.splice(1,3,'kiwi')
+    //console.log(fruit)
+
+
+
+    //Accessing array using for loop
+    //let numbers = [1,2,3,4,5];
+    //console.log(numbers)
+
+    //for(let i=0;i<numbers.length;i++){
+    //  console.log(numbers[i])
+    //}
+
+
+    //sorting
+    let numbers = [10,2,7,3,5,8];
+    console.log(numbers)
+
+    numbers.sort((a,b) => a - b);
+    console.log(numbers);
+    //reverse
+    numbers.sort((a,b) => b - a);
+    console.log(numbers);
+
+
+    //spread operator - used to take copy of an array
+    //arr1 = [1,2,3,4]
+    //newarray = [...arr1]
+    //console.log(newarray)
+    //document.write(newarray)
+
+    //map()
+    //let arr1 = [1,2,3,4]
+    //console.log(arr1)
+    //arr1.map(i=>console.log(i))
+
+    //let arr2 = [1,2,3,4,5,6,7,8,9,10]
+    //const mapevenodd = arr2.map(i=>{
+    //  if(i%2==0){
+    //    return "even"
+    //  }
+    //  else{
+    //    return "odd"
+    //  }
+    //})
+    //console.log(mapevenodd)
+
+
+    //filter
+    let arr1 = [1,2,3,4]
+    console.log(arr1)
+    const filteredvalue = arr1.filter(i=>i%2===0);
+    console.log(filteredvalue)
+
+    
+    //reduce
+    let arr3 = [1,2,3,4,5]
+    const sum = arr3.reduce((accumulator,currentvalue)=>accumulator+currentvalue,0)
+    console.log(sum)
+
+  </script>
+</body>
+</html>

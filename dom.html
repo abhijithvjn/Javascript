@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <h1 id="demo">Hello World</h1>
+  <h1 id="demo1">aasd</h1>
+
+  <div id="div1">
+    
+    
+
+    
+  </div>
+
+  <script>
+    const a= document.getElementById("demo");
+    console.log(a)
+    a.innerHTML="<h1>Abhijith</h1>";
+
+    const b= document.getElementById("demo1");
+    console.log(b)
+    b.textContent="<h1>Hello World</h1>";
+
+    const c=document.getElementById("div1");
+    console.log(c);
+    c.innerHTML="<div><h1>Hello HAYYYY</h1></div>"
+  </script>
+</body>
+</html>

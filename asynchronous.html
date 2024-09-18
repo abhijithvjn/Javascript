@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    //console.log("Start");
+    //setTimeout(function(){console.log("Insise Timeout");},0);
+    //console.log("End");
+
+
+    ///callback -- callback hell
+    function fetchData(callback){ //callback chumma oru parameter koduthekane
+      setTimeout(()=>{
+        const data = 'Some Information';
+        callback(data);
+      },2000)
+    }
+
+    function processData(data){
+      console.log(data);
+    }
+
+    fetchData(processData)//call back - passing one function to other as argument
+
+
+  </script>
+
+</body>
+</html>

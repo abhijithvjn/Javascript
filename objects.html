@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+  
+  <script>
+    let Person={
+      name : "Abhi",
+      age : 25,
+      city : "Bangalore",
+      hobbies : ["reading","writing","cooking"],
+      address: {
+        street: "456 Oak Ave",
+        city: "Somewhere",
+        zip: "54321"
+        },
+      greet :function(name){
+            console.log(`Hai ${name}`);
+        }
+    }
+    console.log(Person)
+
+    //Accessing the properties of an object (using dot operator)
+    //console.log(Person.name)
+    console.log(Person.hobbies)
+    console.log(Person.hobbies[1])
+    console.log(Person['hobbies'][2])
+    console.log(Person.address.city)
+    console.log(Person.address.street)
+    console.log(Person["address"]["street"])
+    Person.greet("Amal");
+
+    //Accessing using (bracket notation)
+    //console.log(Person["name"])
+
+    //Adding a new property to an object
+    Person["gender"] = "Male"
+    Person.course = "Java Full Stack"
+    
+    //Modifying existing property
+    Person["city"] = "Kochi"
+    console.log(Person)
+
+    
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrow Function</title>
+</head>
+<body>
+  <script>
+
+    const add=(a,b)=>
+    {
+      sum=a+b;
+      return sum;
+    }
+
+    console.log(add(2,4))
+
+    //////////////////////////
+    const greet=(name)=>
+    {
+      return `Hello! ${name}`;
+    }
+
+    console.log(greet("Amal"));
+
+    ////////////////////////////
+    const grt=(name)=>
+    {
+      return `Hello! ` + name;
+    }
+
+    console.log(grt("Amal"));
+    
+    ////////////////////////////
+    //if only one return statement
+    const sums=(a,b)=>a+b;
+    console.log(sums(1,4));
+
+    ////////////////////////////////
+    //function recursion
+    function factorial(n)
+    {
+      if (n === 0 || n === 1) 
+      {
+      return 1;
+      }
+      else 
+      {
+        return n * factorial(n - 1);
+      }
+    }
+    console.log(factorial(5));
+
+
+  </script>
+</body>
+</html>

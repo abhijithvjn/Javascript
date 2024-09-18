@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Element Append Child</title>
+</head>
+<body>
+  <!-- <div id="id">Hello World</div> -->
+   <div id="parentDiv">
+
+   </div>
+
+  <script>
+    /*const newelement=document.createElement("p");
+    newelement.innerHTML="This is a new paragraph";
+    document.body.appendChild(newelement);*/
+
+    const parentdiv=document.getElementById("parentDiv");
+    const childdiv=document.createElement("div");
+    childdiv.innerHTML="This is a child tag";
+    parentdiv.appendChild(childdiv);
+
+    const headingtag=document.createElement("h1");
+    headingtag.innerHTML="This is a heading";
+    childdiv.appendChild(headingtag);
+
+
+    /*create a class using js*/
+    const a=document.getElementById("parentDiv");
+    a.setAttribute("class", "highlight");
+
+  </script>
+  
+</body>
+</html>
